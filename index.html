@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Letter for You</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -39,8 +40,15 @@
     <audio id="bg-music" loop> <source src="sigmamusicart-piano-background-music-462076.mp3" type="audio/mpeg"> </audio>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="main.js"></script>
+    <script> document.querySelector('.start-btn').addEventListener('click', () => { 
+  document.getElementById('bg-music').play(); 
+  document.querySelector('.heart').style.display = 'none'; 
+  document.querySelector('.start-btn').style.display = 'none'; 
+  document.querySelector('.scene').style.display = 'block'; }); 
+    </script>
   </body>
 </html>
+
 
 
 
