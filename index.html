@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -306,29 +307,5 @@
         </div>
       </div>
     </div>
-  
-  <div class="stars"></div>
-  <div class="heart"></div>
-  <button class="start-btn">Click to See Magic 💖</button>
-
-  <!-- Background Music -->
-  <audio id="bg-music" loop>
-    <source src="sigmamusicart-piano-background-music-462076.mp3" type="audio/mpeg">
-  </audio>
-
-  <script>
-    document.querySelector('.start-btn').addEventListener('click', () => {
-      // Play music
-      document.getElementById('bg-music').play();
-
-      // Hide heart and button
-      document.querySelector('.heart').style.display = 'none';
-      document.querySelector('.start-btn').style.display = 'none';
-
-      // Show flower scene
-      document.querySelector('.scene').style.display = 'block';
-    });
-  </script>
 </body>
 </html>
-
